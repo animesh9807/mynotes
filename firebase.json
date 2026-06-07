@@ -1,0 +1,25 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "mynotes-animesh",
+                    "appId": "1:1004171793706:android:d15b5ba49f36f114387a53",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "mynotes-animesh",
+                    "configurations": {
+                        "android": "1:1004171793706:android:d15b5ba49f36f114387a53",
+                        "ios": "1:1004171793706:ios:c04bd5c6251caabe387a53",
+                        "macos": "1:1004171793706:ios:c04bd5c6251caabe387a53",
+                        "web": "1:1004171793706:web:5d487ba765fc74b2387a53",
+                        "windows": "1:1004171793706:web:ded0acae0c5eeb1e387a53"
+                    }
+                }
+            }
+        }
+    }
+}

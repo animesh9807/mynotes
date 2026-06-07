@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1004171793706",
+    "project_id": "mynotes-animesh",
+    "storage_bucket": "mynotes-animesh.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004171793706:android:d15b5ba49f36f114387a53",
+        "android_client_info": {
+          "package_name": "com.example.learningdart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl_3Ur-LUGI40ZmgQbQRpwY7A2agGwKCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
