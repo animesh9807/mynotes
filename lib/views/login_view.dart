@@ -98,6 +98,17 @@ class _LoginViewState extends State<LoginView> {
                       selectionColor: Color.fromARGB(1, 4, 232, 213),
                     ),
                   ),
+
+                TextButton(
+                  onPressed:  () {
+                    Navigator.of(context).pushNamedAndRemoveUntil('/register', (route) => false, );
+                  }, 
+                  child: const Text('Register Now!')
+                  
+                  )
+
+
+                  
                 ],
               );
 

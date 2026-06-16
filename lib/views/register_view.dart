@@ -106,6 +106,12 @@ class _RegisterViewState extends State<RegisterView> {
                       selectionColor: Color.fromARGB(1, 4, 232, 213),
                     ),
                   ),
+
+
+                  TextButton(onPressed: () {
+                    Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false); 
+                  }, 
+                  child: const Text('Login Instead'), )
                 ],
               );
 
