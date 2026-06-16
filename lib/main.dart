@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mynotes/firebase_options.dart';
 import 'package:mynotes/views/login_view.dart';
 import 'package:mynotes/views/register_view.dart';
+import 'package:mynotes/views/verify_email_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,7 +44,21 @@ class HomePage extends StatelessWidget {
         builder: (context, asyncSnapshot) {
           switch (asyncSnapshot.connectionState) {
             case ConnectionState.done:
-              return const LoginView();
+              final user = FirebaseAuth.instance.currentUser;
+              if(user != null){
+                if(user.emailVerified){
+                  print('Email is verifired'); 
+                }
+                else{
+                  return const VerifyEmailView(); 
+                }
+              }
+
+              else return LoginView(); 
+
+
+              return const Text('Done');
+              
             default:
               return const CircularProgressIndicator(); 
           }
